@@ -1,0 +1,1075 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+* {
+  box-sizing: border-box;
+}
+
+/* Document
+   ========================================================================== */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: -webkit-radial-gradient(center, ellipse cover, #FDD692 0%, #FDD692 41%, #ecae42 100%);
+  color: white;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #fff;
+  font-size: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.holder {
+  margin: 7em auto;
+}
+
+.cloud, .middle, .middle:before, .middle:after, .blood, .blood:after {
+  background: #FE0000;
+}
+
+.cloud {
+  position: relative;
+  margin-top: 45px;
+  margin-right: 15px;
+  width: 350px;
+  height: 70px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 57px;
+  border-bottom-right-radius: 35px;
+  -webkit-animation: up 4s 0.5s ease-in-out infinite alternate;
+          animation: up 4s 0.5s ease-in-out infinite alternate;
+}
+
+.cloud .middle {
+  position: absolute;
+  top: -92px;
+  left: 103px;
+  width: 170px;
+  height: 104px;
+  border-radius: 85px 85px 0 0;
+}
+
+.cloud .middle:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 46px;
+  left: -53px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.cloud .middle:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 64px;
+  right: -76px;
+  width: 100px;
+  height: 80px;
+  border-top-right-radius: 73px;
+}
+
+.cloud .blood {
+  position: absolute;
+  width: 12px;
+  border-bottom-right-radius: 50% 20px;
+  border-bottom-left-radius: 50% 20px;
+  top: 100%;
+}
+
+.cloud .blood:after {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: 24%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: drip 2s linear infinite;
+          animation: drip 2s linear infinite;
+}
+
+.cloud .mouth {
+  position: absolute;
+  top: -2px;
+  width: 113px;
+  height: 100px;
+  border-bottom: 7px solid white;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  left: 52%;
+  -webkit-transform: rotateX(180deg) translate(-50%, 0);
+          transform: rotateX(180deg) translate(-50%, 0);
+}
+
+.cloud .eye {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: white;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.cloud .eye:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  background: #A49286;
+  z-index: 2;
+  -webkit-animation: blink 5s infinite;
+          animation: blink 5s infinite;
+}
+
+.cloud .eye:after {
+  content: '';
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: #000;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  -webkit-animation: look 8s infinite;
+          animation: look 8s infinite;
+}
+
+.cloud .left, .cloud .right {
+  top: -43px;
+}
+
+.cloud .left {
+  left: 146px;
+}
+
+.cloud .right {
+  left: 200px;
+}
+
+.cloud .shadow {
+  position: absolute;
+  bottom: -175px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 270px;
+  height: 17px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  -webkit-animation: shadowMove 4s 0.25s alternate infinite ease-in-out;
+          animation: shadowMove 4s 0.25s alternate infinite ease-in-out;
+  -webkit-transform-origin: 135px 135px;
+      -ms-transform-origin: 135px 135px;
+          transform-origin: 135px 135px;
+}
+
+.cloud .blood:nth-child(2) {
+  height: 100px;
+  left: 48px;
+}
+
+.cloud .blood:nth-child(2):after {
+  top: 50%;
+  -webkit-animation: drip 2.5s 0.5s linear infinite;
+          animation: drip 2.5s 0.5s linear infinite;
+}
+
+.cloud .blood:nth-child(3) {
+  height: 50px;
+  left: 62px;
+}
+
+.cloud .blood:nth-child(3):after {
+  -webkit-animation: drip 2.5s 0.2s ease-in-out infinite;
+          animation: drip 2.5s 0.2s ease-in-out infinite;
+}
+
+.cloud .blood:nth-child(4) {
+  height: 77px;
+  left: 91px;
+}
+
+.cloud .blood:nth-child(4):after {
+  top: 40%;
+  -webkit-animation: drip 2.5s 0.8s ease infinite;
+          animation: drip 2.5s 0.8s ease infinite;
+}
+
+.cloud .blood:nth-child(5) {
+  height: 52px;
+  left: 122px;
+}
+
+.cloud .blood:nth-child(5):after {
+  -webkit-animation: drip 2s 0.6s ease-in-out infinite;
+          animation: drip 2s 0.6s ease-in-out infinite;
+}
+
+.cloud .blood:nth-child(6) {
+  height: 110px;
+  left: 182px;
+}
+
+.cloud .blood:nth-child(6):after {
+  top: 60%;
+  -webkit-animation: drip 2.5s 0.8s linear infinite;
+          animation: drip 2.5s 0.8s linear infinite;
+}
+
+.cloud .blood:nth-child(7) {
+  height: 60px;
+  left: 195px;
+}
+
+.cloud .blood:nth-child(7):after {
+  -webkit-animation: drip 2.7s 0.2s ease-in-out infinite;
+          animation: drip 2.7s 0.2s ease-in-out infinite;
+}
+
+.cloud .blood:nth-child(8) {
+  height: 51px;
+  left: 210px;
+}
+
+.cloud .blood:nth-child(8):after {
+  top: 20%;
+  -webkit-animation: drip 2.5s 1s ease infinite;
+          animation: drip 2.5s 1s ease infinite;
+}
+
+.cloud .blood:nth-child(9) {
+  height: 20px;
+  left: 222px;
+}
+
+.cloud .blood:nth-child(9):after {
+  top: 0;
+  -webkit-animation: drip 2s 0.4s ease-in-out infinite;
+          animation: drip 2s 0.4s ease-in-out infinite;
+}
+
+.cloud .blood:nth-child(10) {
+  height: 72px;
+  left: 234px;
+}
+
+.cloud .blood:nth-child(10):after {
+  top: 40%;
+  -webkit-animation: drip 2.5s 0.8s linear infinite;
+          animation: drip 2.5s 0.8s linear infinite;
+}
+
+.cloud .blood:nth-child(11) {
+  height: 47px;
+  left: 263px;
+}
+
+.cloud .blood:nth-child(11):after {
+  top: 15%;
+  -webkit-animation: drip 2.7s 0.3s ease-in-out infinite;
+          animation: drip 2.7s 0.3s ease-in-out infinite;
+}
+
+.cloud .blood:nth-child(12) {
+  height: 67px;
+  left: 301px;
+}
+
+.cloud .blood:nth-child(12):after {
+  -webkit-animation: drip 2.5s 1s ease infinite;
+          animation: drip 2.5s 1s ease infinite;
+}
+
+.cloud .blood:nth-child(13) {
+  height: 114px;
+  left: 313px;
+}
+
+.cloud .blood:nth-child(13):after {
+  top: 50%;
+  -webkit-animation: drip 2s 0.2s ease-in-out infinite;
+          animation: drip 2s 0.2s ease-in-out infinite;
+}
+
+.cloud .blood:nth-child(14) {
+  top: 90%;
+  height: 47px;
+  left: 325px;
+}
+
+.cloud .blood:nth-child(14):after {
+  top: 1%;
+  -webkit-animation: drip 2.5s 0.8s linear infinite;
+          animation: drip 2.5s 0.8s linear infinite;
+}
+
+@-webkit-keyframes drip {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(0);
+            transform: translateX(-50%) translateY(0);
+  }
+  10% {
+    -webkit-transform: translateX(-50%) translateY(10px);
+            transform: translateX(-50%) translateY(10px);
+  }
+  20% {
+    -webkit-transform: translateX(-50%) translateY(20px);
+            transform: translateX(-50%) translateY(20px);
+  }
+  25% {
+    border-radius: 50% / 60% 60% 50% 50%;
+    -webkit-transform: translateX(-50%) translateY(22px);
+            transform: translateX(-50%) translateY(22px);
+  }
+  30% {
+    -webkit-transform: translateX(-50%) translateY(25px);
+            transform: translateX(-50%) translateY(25px);
+    height: 20px;
+    width: 10px;
+    border-radius: 50% / 70% 70% 60% 60%;
+  }
+  40% {
+    -webkit-transform: translateX(-50%) translateY(35px);
+            transform: translateX(-50%) translateY(35px);
+    height: 20px;
+    width: 12px;
+    border-radius: 50% / 70% 70% 50% 50%;
+  }
+  50% {
+    -webkit-transform: translateX(-50%) translateY(40px);
+            transform: translateX(-50%) translateY(40px);
+    height: 15px;
+    width: 13px;
+    border-radius: 50% / 60% 60% 50% 50%;
+  }
+  60% {
+    -webkit-transform: translateX(-50%) translateY(42px);
+            transform: translateX(-50%) translateY(42px);
+    height: 14px;
+    width: 13px;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+  90% {
+    -webkit-transform: translateX(-50%) translateY(70px);
+            transform: translateX(-50%) translateY(70px);
+    border-radius: 50%;
+  }
+  90% {
+    -webkit-transform: translateX(-50%) translateY(80px);
+            transform: translateX(-50%) translateY(80px);
+    border-radius: 50%;
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(60px);
+            transform: translateX(-50%) translateY(60px);
+    border-radius: 50%;
+    opacity: 0;
+  }
+}
+
+@keyframes drip {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(0);
+            transform: translateX(-50%) translateY(0);
+  }
+  10% {
+    -webkit-transform: translateX(-50%) translateY(10px);
+            transform: translateX(-50%) translateY(10px);
+  }
+  20% {
+    -webkit-transform: translateX(-50%) translateY(20px);
+            transform: translateX(-50%) translateY(20px);
+  }
+  25% {
+    border-radius: 50% / 60% 60% 50% 50%;
+    -webkit-transform: translateX(-50%) translateY(22px);
+            transform: translateX(-50%) translateY(22px);
+  }
+  30% {
+    -webkit-transform: translateX(-50%) translateY(25px);
+            transform: translateX(-50%) translateY(25px);
+    height: 20px;
+    width: 10px;
+    border-radius: 50% / 70% 70% 60% 60%;
+  }
+  40% {
+    -webkit-transform: translateX(-50%) translateY(35px);
+            transform: translateX(-50%) translateY(35px);
+    height: 20px;
+    width: 12px;
+    border-radius: 50% / 70% 70% 50% 50%;
+  }
+  50% {
+    -webkit-transform: translateX(-50%) translateY(40px);
+            transform: translateX(-50%) translateY(40px);
+    height: 15px;
+    width: 13px;
+    border-radius: 50% / 60% 60% 50% 50%;
+  }
+  60% {
+    -webkit-transform: translateX(-50%) translateY(42px);
+            transform: translateX(-50%) translateY(42px);
+    height: 14px;
+    width: 13px;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+  90% {
+    -webkit-transform: translateX(-50%) translateY(70px);
+            transform: translateX(-50%) translateY(70px);
+    border-radius: 50%;
+  }
+  90% {
+    -webkit-transform: translateX(-50%) translateY(80px);
+            transform: translateX(-50%) translateY(80px);
+    border-radius: 50%;
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(60px);
+            transform: translateX(-50%) translateY(60px);
+    border-radius: 50%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes up {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+            transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(-25px) rotate(2deg);
+            transform: translateY(-25px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateY(-40px) rotate(-2deg);
+            transform: translateY(-40px) rotate(-2deg);
+  }
+}
+
+@keyframes up {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+            transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(-25px) rotate(2deg);
+            transform: translateY(-25px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateY(-40px) rotate(-2deg);
+            transform: translateY(-40px) rotate(-2deg);
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    height: 0;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  49% {
+    height: 0;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  50% {
+    height: 30px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  53% {
+    height: 30px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  58% {
+    height: 0px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    height: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    height: 0;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  49% {
+    height: 0;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  50% {
+    height: 30px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  53% {
+    height: 30px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  58% {
+    height: 0px;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    height: 0;
+  }
+}
+
+@-webkit-keyframes look {
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  49% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  50% {
+    left: 50%;
+    top: 50%;
+  }
+  53% {
+    left: 21%;
+    top: 40%;
+  }
+  70% {
+    left: 21%;
+    top: 40%;
+  }
+  77% {
+    left: 50%;
+    top: 50%;
+  }
+  100% {
+  }
+}
+
+@keyframes look {
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  49% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  50% {
+    left: 50%;
+    top: 50%;
+  }
+  53% {
+    left: 21%;
+    top: 40%;
+  }
+  70% {
+    left: 21%;
+    top: 40%;
+  }
+  77% {
+    left: 50%;
+    top: 50%;
+  }
+  100% {
+  }
+}
+
+@-webkit-keyframes shadowMove {
+  from {
+    -webkit-transform: translateX(-50%) scale(1);
+            transform: translateX(-50%) scale(1);
+  }
+  to {
+    -webkit-transform: translateX(-50%) scale(0.8);
+            transform: translateX(-50%) scale(0.8);
+  }
+}
+
+@keyframes shadowMove {
+  from {
+    -webkit-transform: translateX(-50%) scale(1);
+            transform: translateX(-50%) scale(1);
+  }
+  to {
+    -webkit-transform: translateX(-50%) scale(0.8);
+            transform: translateX(-50%) scale(0.8);
+  }
+}
